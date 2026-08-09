@@ -1,0 +1,245 @@
+body { 
+    display: flex; 
+    flex-direction: column; 
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-between;
+    margin: 0; 
+}
+
+#header {
+    background-color: #1e2837; 
+    color: white; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    column-gap: 100px; 
+    row-gap: 50px; 
+    flex-grow: 0; 
+    padding-bottom: 100px; 
+}
+
+#header > div { 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;
+    width: 800px;
+    gap: 50px;
+}
+
+#header .header-top { 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+#header .header-bottom { 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-container { 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: first;
+}
+
+.hb-right { 
+    width: 50%; 
+}
+
+.hb-right img {
+    width: 352px; 
+    height: 192px; 
+    background-color: #6c757d;
+    display: block; 
+}
+
+.hb-left {
+    width: 50%; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: start;
+    gap: 5px; 
+}
+
+#main { 
+    display: flex; 
+    background-color: white; 
+    flex-shrink: 1; 
+    flex-grow: 1; 
+    flex-direction: column;
+    
+
+}
+
+#main > div { 
+    display: flex; 
+    flex-basis: 320px;
+}
+
+#footer { 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: #1e2837;
+    height: 75px; 
+    color: white;
+    font-size: .8em; 
+}
+
+#header_logo {
+    font-family:Arial, Helvetica, sans-serif; 
+    font-size: x-large; 
+    font-weight: 900; 
+}
+
+#misc_stuff { 
+    display: flex; 
+    flex-direction: column;
+    justify-content: start;
+    align-items: center; 
+    gap: 30px; 
+    margin-top: 50px
+}
+
+#misc_stuff .header {
+    font-size: 1.6em; 
+    font-weight: 1000; 
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#misc_stuff .content {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-evenly;
+    width: 800px; 
+    
+}
+
+#block_quote { 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e6ec;
+}
+
+#block_quote div {
+    display: flex; 
+}
+
+#block_quote .quote { 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic; 
+    font-size: x-large; 
+    width: 600px; 
+}
+
+#block_quote .citation {
+    font-weight: bold; 
+    font-size: large; 
+    align-self: flex-end;
+
+}
+
+#actions { 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#actions .card {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 110px; 
+    width: 700px; 
+    border-radius: 5px;
+    padding-left: 75px; 
+    padding-right: 75px; 
+    background-color: #3b82f6;
+    color: white;
+}
+
+#actions .card .information {
+    font-size: smaller; 
+}
+
+#actions .card .information h1 {
+    font-size: 1.5em; 
+    margin-bottom: 0px; 
+    padding-bottom: 0px;
+}
+
+#actions .card .information p {
+    font-size: 1em; 
+    margin-top: 0px; 
+    padding-top: 0px;
+}
+
+.content .card { 
+    width: 100px; 
+    height: 100px; 
+
+}
+
+.content .card img { 
+    display: block;
+    width: 120px; 
+    height: 120px;  
+    border: 2px solid blue;
+    border-radius: 10px; 
+}
+
+.content .card .caption {
+    font-size: smaller; 
+    text-align: center; 
+}
+
+#menu-container { 
+    
+    padding: 20px; 
+    margin-top: 0; 
+}
+
+.menu-items { 
+    list-style-type: none;
+    display: flex; 
+    flex-direction: row; 
+    gap: 30px; 
+
+}
+
+.menu-items a {
+    color: #b3b8c2; 
+    text-decoration: none;
+    
+}
+
+.button-bar a {
+    display: block; 
+    color: white; 
+    font-weight: 600;
+    font-size: 13px;
+    border-radius: 5px; 
+    text-align: center; 
+    padding: 5px; 
+    background-color: #3b82f6;
+    width: 100px; 
+    height: 20px;  
+    line-height: 20px; 
+    text-decoration: none; 
+    
+}
+
+#actions .button-bar a {
+    border: 2px solid white; 
+}
+
+
+
