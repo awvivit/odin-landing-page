@@ -1,14 +1,26 @@
+html { 
+    font-family: "Roboto", sans-serif; 
+}
 body { 
     display: flex; 
     flex-direction: column; 
-    font-family: Arial, Helvetica, sans-serif;
     justify-content: space-between;
     margin: 0; 
+    margin-bottom: auto; 
+}
+
+.roboto-100 {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
 #header {
-    background-color: #1e2837; 
-    color: white; 
+    background-color: #1F2937; 
+    color: #F9FAF8;
     display: flex; 
     flex-direction: column; 
     align-items: center;
@@ -16,24 +28,18 @@ body {
     column-gap: 100px; 
     row-gap: 50px; 
     flex-grow: 0; 
-    padding-bottom: 100px; 
 }
 
 #header > div { 
     display: flex; 
     flex-direction: row; 
     justify-content: center;
-    width: 800px;
+    width: 1000px;
     gap: 50px;
 }
 
 #header .header-top { 
     justify-content: space-between; 
-    align-items: center;
-}
-
-#header .header-bottom { 
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -44,8 +50,46 @@ body {
     align-items: first;
 }
 
+#content { 
+    display: flex; 
+    background-color: white; 
+    flex-direction: column;
+    
+    justify-content: center;
+    row-gap: 50px;  
+
+}
+
+#content > div { 
+    display: flex;
+    flex-basis: 320px;
+    width: auto; 
+    flex-grow: 1; 
+}
+
+#main_header { 
+    display: flex; 
+    flex-direction: column; 
+    column-gap: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937; 
+    color: #F9FAF8;
+    height: 400px; 
+}
+
+#main_header > div { 
+    display: flex;  
+    flex-direction: row; 
+   justify-content: space-between;
+   align-items: center;
+   width: 1000px;
+}
+
 .hb-right { 
     width: 50%; 
+    display: flex; 
+    justify-content: flex-end;
 }
 
 .hb-right img {
@@ -61,21 +105,19 @@ body {
     flex-direction: column; 
     justify-content: start;
     gap: 5px; 
+
 }
 
-#main { 
-    display: flex; 
-    background-color: white; 
-    flex-shrink: 1; 
-    flex-grow: 1; 
-    flex-direction: column;
+.hb-left h1 {
+    margin-top: 0px;
+    margin-bottom: 0px; 
+    font-size: 48px;
     
-
 }
-
-#main > div { 
-    display: flex; 
-    flex-basis: 320px;
+.hb-left p {
+    font-size: 18px; 
+    margin-top: 0px;
+    margin-bottom: 0px; 
 }
 
 #footer { 
@@ -89,32 +131,38 @@ body {
 }
 
 #header_logo {
-    font-family:Arial, Helvetica, sans-serif; 
     font-size: x-large; 
-    font-weight: 900; 
+    font-weight: 900;
+    font-size: 24px; 
+    color: #F9FAF8;
+
 }
 
 #misc_stuff { 
     display: flex; 
-    flex-direction: column;
-    justify-content: start;
     align-items: center; 
-    gap: 30px; 
-    margin-top: 50px
+    justify-content: center;
+    gap: 320px;  
 }
 
-#misc_stuff .header {
+#misc_stuff div { 
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+#misc_stuff div .header {
     font-size: 1.6em; 
     font-weight: 1000; 
-    font-family: Calibri, 'Trebuchet MS', sans-serif;
 
 }
 
-#misc_stuff .content {
+#misc_stuff div .content {
     display: flex; 
     flex-direction: row; 
     justify-content: space-evenly;
-    width: 800px; 
+    width: 1000px; 
     
 }
 
@@ -123,25 +171,32 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #e5e6ec;
+    background-color: #E5E7EB;
 }
 
 #block_quote div {
     display: flex; 
+    justify-content: center;
+    flex-direction: column; 
+    flex-shrink: 0; 
+    flex-grow: 1;
 }
 
+
 #block_quote .quote { 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic; 
-    font-size: x-large; 
-    width: 600px; 
+    justify-content: space-around;
+    font-size: 36px; 
+    color: #1f2937; 
+    font-weight: 300; 
+    width: 800px; 
 }
 
 #block_quote .citation {
     font-weight: bold; 
     font-size: large; 
-    align-self: flex-end;
-
+    align-self: flex-end; 
+    margin-right: 50px; 
 }
 
 #actions { 
@@ -194,6 +249,7 @@ body {
     height: 120px;  
     border: 2px solid blue;
     border-radius: 10px; 
+    padding: 2px; 
 }
 
 .content .card .caption {
@@ -229,7 +285,7 @@ body {
     border-radius: 5px; 
     text-align: center; 
     padding: 5px; 
-    background-color: #3b82f6;
+    background-color: #3882f6;
     width: 100px; 
     height: 20px;  
     line-height: 20px; 
