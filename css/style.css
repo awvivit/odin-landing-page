@@ -142,23 +142,24 @@ body {
     display: flex; 
     align-items: center; 
     justify-content: center;
-    gap: 320px;  
+
 }
 
-#misc_stuff div { 
+#misc_stuff > div { 
     display: flex; 
     flex-direction: column;
     justify-content: space-between;
     align-items: center; 
+    gap: 40px; 
 }
 
-#misc_stuff div .header {
+#misc_stuff > div > .header {
     font-size: 1.6em; 
     font-weight: 1000; 
-
+    height: auto; 
 }
 
-#misc_stuff div .content {
+#misc_stuff > div > .content {
     display: flex; 
     flex-direction: row; 
     justify-content: space-evenly;
@@ -174,7 +175,7 @@ body {
     background-color: #E5E7EB;
 }
 
-#block_quote div {
+#block_quote > div {
     display: flex; 
     justify-content: center;
     flex-direction: column; 
@@ -240,6 +241,10 @@ body {
 .content .card { 
     width: 100px; 
     height: 100px; 
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
 
 }
 
